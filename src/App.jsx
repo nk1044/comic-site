@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+
 
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1 className=''>hello</h1>
+      <h1>hello</h1>
     </>
   )
 }
