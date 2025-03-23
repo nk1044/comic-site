@@ -15,8 +15,8 @@ function Home() {
           <h2 className='text-3xl font-bold text-[#ffbade] pl-12'>Trending</h2>
           <AnimeCarousel />
         </div>
-        <div className='h-40 w-full bg-gray-800'>
-    hello
+        <div className='h-40 w-full'>
+    
         </div>
       </main>
     </div>
