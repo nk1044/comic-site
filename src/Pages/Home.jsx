@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './Carousel'; 
+import Carousel from '../Components/Carousel'; 
 import AnimeCarousel from '../Components/TrendsCard';
 
 function Home() {
