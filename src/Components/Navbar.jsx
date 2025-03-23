@@ -33,7 +33,7 @@ const Navbar = () => {
           </button>
           <a href="/" className="flex items-center">
             <span className="text-2xl md:text-3xl font-bold bg-clip-text bg-gradient-to-r text-white">
-              Comic<span className='text-purple-800'>Verse</span>
+              Comic<span className='text-blue-700'>Verse</span>
             </span>
           </a>
         </div>

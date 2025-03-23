@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play, BookOpen } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Carousel = ({ className = "" }) => {
+  const navigation=useNavigate()
   const slides = [
     { 
       src: '/solo-leveling.jpg', 
@@ -121,7 +123,7 @@ const Carousel = ({ className = "" }) => {
                 </div>
                 
                 <div className="flex gap-4">
-                  <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors">
+                  <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors" onClick={()=>navigation('/read-comic')}>
                     <BookOpen size={18} />
                     <span className="font-medium">Read Now</span>
                   </button>
