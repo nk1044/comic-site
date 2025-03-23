@@ -1,6 +1,6 @@
 import React from 'react';
-import Carousel from '../Components/Carousel'; 
-import Navbar from '../Components/Navbar';
+import Carousel from './Carousel'; 
+import AnimeCarousel from '../Components/TrendsCard';
 
 function Home() {
   return (
@@ -9,15 +9,12 @@ function Home() {
         <div className="h-[90vh] w-full">
           <Carousel />
         </div>
-        
-        <section className="container mx-auto py-8 px-6">
-          <h2 className="text-2xl font-bold mb-4">Popular Shows</h2>
-          <p>Additional content would go here...</p>
-        </section>
+
+        {/* Anime Carousel Section */}
+        <div className="mt-10 px-4">
+          <AnimeCarousel />
+        </div>
       </main>
-      
-      {/* Footer */}
-      
     </div>
   );
 }
