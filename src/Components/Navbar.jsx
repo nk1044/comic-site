@@ -32,8 +32,8 @@ const Navbar = () => {
             </svg>
           </button>
           <a href="/" className="flex items-center">
-            <span className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-500">
-              ComicVerse
+            <span className="text-2xl md:text-3xl font-bold bg-clip-text bg-gradient-to-r text-white">
+              Comic<span className='text-purple-800'>Verse</span>
             </span>
           </a>
         </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button className="absolute right-0 top-0 h-full px-3 rounded-r-lg flex items-center bg-pink-500 text-white hover:bg-pink-600 transition">
+            <button className="absolute right-0 top-0 h-full px-3 rounded-r-lg flex items-center bg-blue-500 text-white hover:bg-blue-600 transition">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -64,7 +64,7 @@ const Navbar = () => {
             </a>
           </div>
           <a href="#" className="text-gray-200 hover:text-white transition">Calendar</a>
-          <button className="bg-gradient-to-r from-pink-500 to-purple-600 px-4 py-2 rounded-lg font-medium hover:opacity-90 transition shadow-md">
+          <button className="bg-gradient-to-r from-blue-500 to-blue-600 px-4 py-2 rounded-lg font-medium hover:opacity-90 transition shadow-md">
             Login
           </button>
         </div>
