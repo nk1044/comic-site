@@ -90,6 +90,7 @@ const Carousel = ({ className = "" }) => {
             <div className="absolute inset-0">
               <img 
                 src={slide.src} 
+                loading='lazy'
                 className="absolute block w-full h-full object-cover" 
                 alt={slide.alt} 
               />
