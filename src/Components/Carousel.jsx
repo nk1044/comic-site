@@ -1,53 +1,52 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Play, Info } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, BookOpen } from 'lucide-react';
 
-// Define the slides data directly within the component
 const Carousel = ({ className = "" }) => {
-  // Default slides data built into the component
+  // Updated slides data for manga and comics
   const slides = [
     { 
-      src: '/aot.png', 
-      alt: 'Attack on Titan',
-      spotlight: "#1 Spotlight",
-      title: "Attack on Titan: Final Season",
-      description: "The epic conclusion to humanity's fight for survival against the titans begins now.",
-      duration: "24m",
-      releaseDate: "Jan 12, 2025",
-      rating: "HD",
-      ageRating: "16+"
+      src: '/solo-leveling.jpg', 
+      alt: 'Solo Leveling',
+      spotlight: "#1 Trending",
+      title: "Solo Leveling",
+      description: "In a world where hunters with special abilities are tasked with fighting deadly monsters, Sung Jin-Woo is known as the 'World's Weakest Hunter.'",
+      type: "Manhwa",
+      releaseDate: "Updated Mar 15, 2025",
+      rating: "4.9★",
+      genre: "Action"
+    },
+    { 
+      src: '/batman.jpg', 
+      alt: 'Batman: The Dark Knight Returns',
+      spotlight: "#2 Trending",
+      title: "Batman: The Dark Knight Returns",
+      description: "Frank Miller's iconic story of an aging Bruce Wayne coming out of retirement to fight crime in a dystopian Gotham City.",
+      type: "Comic",
+      releaseDate: "Complete Series",
+      rating: "4.8★",
+      genre: "Superhero"
     },
     { 
       src: '/jjk2.png', 
       alt: 'Jujutsu Kaisen', 
-      spotlight: "#2 Spotlight",
-      title: "Jujutsu Kaisen Season 2",
-      description: "Yuji Itadori and the jujutsu sorcerers face their most dangerous curses yet.",
-      duration: "24m",
-      releaseDate: "Dec 15, 2024",
-      rating: "HD",
-      ageRating: "14+"
+      spotlight: "#3 Trending",
+      title: "Jujutsu Kaisen",
+      description: "Yuji Itadori joins a secret organization of Jujutsu Sorcerers to kill a powerful Curse named Ryomen Sukuna, of whom Yuji becomes the host.",
+      type: "Manga",
+      releaseDate: "Updated Mar 20, 2025",
+      rating: "4.7★",
+      genre: "Supernatural"
     },
     { 
-      src: '/solo-leveling.jpg', 
-      alt: 'Solo Leveling',
-      spotlight: "#3 Spotlight",
-      title: "Solo Leveling Season 2: Arise from the Shadow",
-      description: "The second season takes place directly after the events of the first season and picks up with Sung Jinwoo embracing his newfound powers as the Shadow Monarch.",
-      duration: "24m",
-      releaseDate: "Jan 5, 2025",
-      rating: "HD",
-      ageRating: "12+"
-    },
-    { 
-      src: '/batman.jpg', 
-      alt: 'Batman',
-      spotlight: "#4 Spotlight",
-      title: "Batman: The Dark Knight Returns",
-      description: "After a decade of absence, Bruce Wayne returns to Gotham as crime rates soar.",
-      duration: "1h 42m",
-      releaseDate: "Feb 10, 2025",
-      rating: "HD",
-      ageRating: "13+"
+      src: '/aot.png', 
+      alt: 'Attack on Titan',
+      spotlight: "Editor's Pick",
+      title: "Attack on Titan",
+      description: "In a world where humanity lives behind walls protecting them from giant humanoid Titans, a young boy vows revenge after a Titan causes tragedy in his life.",
+      type: "Manga",
+      releaseDate: "Complete Series",
+      rating: "4.9★",
+      genre: "Dark Fantasy"
     },
   ];
 
@@ -101,7 +100,7 @@ const Carousel = ({ className = "" }) => {
             {/* Text content overlay */}
             <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12 lg:p-16 text-white">
               <div className="max-w-3xl">
-                <span className="inline-block px-3 py-1 mb-3 text-sm font-medium text-pink-500 bg-pink-500/20 rounded-full">
+                <span className="inline-block px-3 py-1 mb-3 text-sm font-medium text-blue-500 bg-blue-500/20 rounded-full">
                   {slide.spotlight}
                 </span>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3">{slide.title}</h2>
@@ -109,30 +108,27 @@ const Carousel = ({ className = "" }) => {
                 
                 <div className="flex items-center flex-wrap gap-4 md:gap-6 mb-8">
                   <div className="flex items-center gap-2 text-sm text-gray-300">
-                    <span>TV</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-gray-300">
-                    <span>{slide.duration}</span>
+                    <span>{slide.type}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-300">
                     <span>{slide.releaseDate}</span>
                   </div>
-                  <span className="px-2 py-1 text-xs font-medium bg-pink-500/80 rounded">
+                  <span className="px-2 py-1 text-xs font-medium bg-blue-500/80 rounded">
                     {slide.rating}
                   </span>
                   <span className="px-2 py-1 text-xs font-medium bg-green-500/80 rounded">
-                    {slide.ageRating}
+                    {slide.genre}
                   </span>
                 </div>
                 
                 <div className="flex gap-4">
-                  <button className="flex items-center gap-2 px-6 py-3 bg-pink-600 hover:bg-pink-700 rounded-full transition-colors">
-                    <Play size={18} />
-                    <span className="font-medium">Watch Now</span>
+                  <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors">
+                    <BookOpen size={18} />
+                    <span className="font-medium">Read Now</span>
                   </button>
                   <button className="flex items-center gap-2 px-6 py-3 bg-gray-800/70 hover:bg-gray-700 rounded-full transition-colors">
-                    <Info size={18} />
-                    <span>Detail</span>
+                    <Play size={18} />
+                    <span>Preview</span>
                   </button>
                 </div>
               </div>
