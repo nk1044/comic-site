@@ -4,16 +4,16 @@ import AnimeCard from "./AnimeCard";
 
 // Example Data
 const animeData = [
-  { name: "One Piece", index: "01", img: "/one-piece.png" },
-  { name: "Solo Leveling", index: "02", img: "/solo-leveling.png" },
-  { name: "Dragon Ball Daima", index: "03", img: "/db-daima.png" },
-  { name: "Sakamoto Days", index: "04", img: "/sakamoto-days.png" },
-  { name: "The Apothecary Diaries", index: "05", img: "/apothecary-diaries.png" },
-  { name: "My Happy Marriage", index: "06", img: "/my-happy-marriage.png" },
-  { name: "Dragon Ball Daima", index: "07", img: "/db-daima.png" },
-  { name: "Sakamoto Days", index: "08", img: "/sakamoto-days.png" },
-  { name: "The Apothecary Diaries", index: "05", img: "/apothecary-diaries.png" },
-  { name: "My Happy Marriage", index: "06", img: "/my-happy-marriage.png" },
+  { name: "Attack On Titan", index: "01", img: "/aot.png" },
+  { name: "Jujutsu Kaisen", index: "02", img: "/jjk1.png" },
+  { name: "Solo Leveling", index: "03", img: "/solo-leveling.jpg" },
+  { name: "Jujutsu Kaisen", index: "04", img: "/jjk2.png" },
+  { name: "Jujutsu Kaisen", index: "05", img: "/jjk1.png" },
+  { name: "Solo Leveling", index: "06", img: "/solo-leveling.jpg" },
+  { name: "Jujutsu Kaisen", index: "07", img: "/jjk2.png" },
+  { name: "Attack On Titan", index: "08", img: "/aot.png" },
+  { name: "Jujutsu Kaisen", index: "05", img: "/jjk1.png" },
+  { name: "Batman", index: "06", img: "/batman.jpg" },
 ];
 
 const AnimeCarousel = () => {

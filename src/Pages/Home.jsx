@@ -12,7 +12,11 @@ function Home() {
 
         {/* Anime Carousel Section */}
         <div className="mt-10 px-4">
+          <h2 className='text-3xl font-bold text-[#ffbade] pl-12'>Trending</h2>
           <AnimeCarousel />
+        </div>
+        <div className='h-40 w-full bg-gray-800'>
+    hello
         </div>
       </main>
     </div>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play, BookOpen } from 'lucide-react';
 
 const Carousel = ({ className = "" }) => {
-  // Updated slides data for manga and comics
   const slides = [
     { 
       src: '/solo-leveling.jpg', 
@@ -52,9 +51,8 @@ const Carousel = ({ className = "" }) => {
 
   const totalItems = slides.length;
   const [activeItem, setActiveItem] = useState(0);
-  const autoplayInterval = 5000; // Set default autoplay interval
+  const autoplayInterval = 5000; 
   
-  // Auto-advance carousel only if there's more than one slide
   useEffect(() => {
     if (totalItems <= 1) return;
     

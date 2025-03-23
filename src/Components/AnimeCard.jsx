@@ -5,6 +5,9 @@ function AnimeCard({
     index,
     img
 }) {
+    if(name.length > 17) {
+        name = name.slice(0, 14) + '...'
+    }
     return (
         <div className='w-56 h-64  flex justify-end'>
             <div className='w-8 h-64 flex flex-col-reverse items-center gap-2'>
